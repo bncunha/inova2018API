@@ -10,15 +10,15 @@ module.exports = {
   attributes: {
     nome: {type: 'string', required: true},
     dataNascimento: {type: 'string', required: true},
-    cpf: {type: 'string', unique: true, required: true},
+    cpf: {type: 'string', required: true},
     rg: {type: 'string'},
-    numeroCRM: {type: 'string', unique: true, required: true},
+    numeroCRM: {type: 'string', required: true},
     dataInsricaoCRM: {type: 'string', required: true},
     periodoValidadeCRM: {type: 'number', required: true},
     endereco: {type: 'json', required: true},
-    // especialidades: {type: 'string', unique: true, required: true},
-    // areasDeAtuacao: {type: 'string', unique: true, required: true},
-    // consultas: {type: 'string', unique: true, required: true},
+    especialidades: {collection: 'especialidade', via: 'profissionais'},
+    areasDeAtuacao: {collection: 'areadeatuacao', via: 'profissionais'},
+    consultas: {collection: 'consulta', via: 'profissional'},
     consultorio: {model: 'consultorio'}
 
   },
