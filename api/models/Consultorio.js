@@ -8,9 +8,9 @@
 module.exports = {
 
   attributes: {
-    razaoSocial: {type: 'string', required: true},
-    nomeFantasia: {type: 'string', required: true},
-    cnpj: {type: 'string', required: true},
+    razaoSocial: {type: 'string'},
+    nomeFantasia: {type: 'string'},
+    cnpj: {type: 'string'},
     endereco: {type: 'json'},
     emails: {type: 'json', columnType: 'array'},
     telefones: {type: 'json', columnType: 'array'},

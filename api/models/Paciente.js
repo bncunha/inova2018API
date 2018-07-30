@@ -8,11 +8,11 @@
 module.exports = {
 
   attributes: {
-    nome: { type: 'string', required: true },
-    dataNascimento: { type: 'string', required: true },
-    cpf: { type: 'string', required: true },
-    endereco: { type: 'json', required: true },
-    situacao: { type: 'boolean', required: true },
+    nome: { type: 'string' },
+    dataNascimento: { type: 'string' },
+    cpf: { type: 'string' },
+    endereco: { type: 'json' },
+    situacao: { type: 'boolean' },
     consultas: { collection: 'consulta', via: 'paciente' }
 
   },

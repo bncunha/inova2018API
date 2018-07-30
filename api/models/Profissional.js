@@ -8,14 +8,14 @@
 module.exports = {
 
   attributes: {
-    nome: {type: 'string', required: true},
-    dataNascimento: {type: 'string', required: true},
-    cpf: {type: 'string', required: true},
+    nome: {type: 'string'},
+    dataNascimento: {type: 'string'},
+    cpf: {type: 'string'},
     rg: {type: 'string'},
-    numeroCRM: {type: 'string', required: true},
-    dataInsricaoCRM: {type: 'string', required: true},
-    periodoValidadeCRM: {type: 'number', required: true},
-    endereco: {type: 'json', required: true},
+    numeroCRM: {type: 'string'},
+    dataInsricaoCRM: {type: 'string'},
+    periodoValidadeCRM: {type: 'number'},
+    endereco: {type: 'json'},
     especialidades: {collection: 'especialidade', via: 'profissionais'},
     areasDeAtuacao: {collection: 'areadeatuacao', via: 'profissionais'},
     consultas: {collection: 'consulta', via: 'profissional'},

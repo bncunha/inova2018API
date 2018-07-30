@@ -8,7 +8,7 @@
 module.exports = {
 
   attributes: {
-    nome: {type: 'string', required: true},
+    nome: {type: 'string' },
     profissionais: {collection: 'profissional', via: 'especialidades'}
   },
 

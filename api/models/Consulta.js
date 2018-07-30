@@ -8,12 +8,12 @@
 module.exports = {
 
   attributes: { 
-    data: { type: 'string', required: true },
-    horario: { type: 'string', required: true },
-    situacao: { type: 'number', required: true },
-    consultorio: {model: 'consultorio', required: true},
-    profissional: {model: 'profissional', required: true},
-    paciente: {model: 'paciente', required: true}
+    data: { type: 'string' },
+    horario: { type: 'string' },
+    situacao: { type: 'number' },
+    consultorio: {model: 'consultorio'},
+    profissional: {model: 'profissional'},
+    paciente: {model: 'paciente'}
 
   },
 
